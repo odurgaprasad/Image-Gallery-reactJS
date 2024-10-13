@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-image: linear-gradient(
+    to left,
+    rgb(228, 228, 215),
+    rgb(217, 205, 221),
+    rgb(219, 235, 241),
+    rgb(219, 221, 199)
+  );
+  height: 100%;
+  min-height: 100vh;
+  padding-top: 40px;
+  background-size: cover;
+  padding: 20px;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.label-heading {
+  display: block;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 90px;
+  background: -webkit-linear-gradient(#72088d, #418ea8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container input {
+  padding: 1rem;
+  width: 50%;
+  border-radius: 10px;
+  background-color: rgb(197, 193, 193);
+  border: none;
+  font-size: 20px;
+  margin-bottom: 5rem;
+}
+.image-gallery {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 20px; /* Add some space between the images */
+}
+
+.image-item img {
+  width: 100%; /* Make the image take up the full width of the grid cell */
+  height: auto; /* Keep the image aspect ratio */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow */
+}
+.center {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: sans-serif;
+}
